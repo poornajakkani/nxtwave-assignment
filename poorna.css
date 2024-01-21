@@ -1,0 +1,115 @@
+.bg{
+    font-family:cambria ;
+    background-color: black;
+    border: solid;
+}
+.navbar{
+    background-color: #fe7171;
+    display: flex;
+    justify-content: space-around;
+    padding:10px;
+
+    
+}
+span{
+    color:black;
+   
+}
+.lorem-section{
+    background-image:linear-gradient(to right,#fff3b1,#ffd6ce) ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr);
+    gap:20px;
+    display: flex;
+    padding: 40px;
+    
+}
+
+button{
+    background-color:#ff7171 ;
+    color:white;
+    border: #fe7171;
+    width:200px;
+    padding:10px;
+}
+    
+.image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.section-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+    grid-row: 1;
+    grid-column: span 1;
+   
+    
+    padding: 40px;
+}
+.image2{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+.bg2{
+    background-color:#ff7171 ;
+    padding:10px;
+    font-size: 20px;
+    height: 100%;
+    width:100%;
+    margin: 20px;
+    display: grid;
+    margin-top: 100px;
+
+}
+.p1{
+    font-size:10px;
+    height: auto;
+
+}
+.p2{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.bg3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    flex:row;
+    background-image:linear-gradient(to right,#fff3b1,#ffd6ce,#ffb1f1) ;
+    border: solid;
+}
+.poo{
+    grid-row:1;
+    grid-row:span 2;
+}
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .bg3 {
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .image,
+    .image2 {
+        max-width: 100%; 
+        height: auto;
+        object-fit: cover;
+    }
+}
